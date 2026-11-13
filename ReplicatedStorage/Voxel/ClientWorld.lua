@@ -1,0 +1,1 @@
+return { ["world"] = nil, boxVersion = 0 }

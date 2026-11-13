@@ -1,0 +1,144 @@
+local GameConfig = {
+	TEAMS = {
+		{ name = "Reds", color = Color3.fromRGB(235, 72, 72), brick = BrickColor.new("Really red") },
+		{
+			name = "Blues",
+			color = Color3.fromRGB(60, 150, 255),
+			brick = BrickColor.new("Really blue")
+		}
+	},
+	ROUND_TIME = 900,
+	INTERMISSION = 15,
+	BEACON_DESTROYED_FRACTION = 0.4,
+	MAX_HEALTH = 200,
+	REGEN_DELAY = 5,
+	REGEN_RATE = 10,
+	DAMAGE = {
+		RIFLE_STEPS = {
+			{ 0, 41.2 },
+			{ 21.5, 34.3 },
+			{ 75, 29.4 }
+		},
+		PISTOL_CURVE = {
+			{ 0, 40 },
+			{ 10, 40 },
+			{ 20, 32 },
+			{ 35, 25 },
+			{ 55, 20 }
+		},
+		HAND_CANNON = 105,
+		HAND_CANNON_MIN = 70,
+		HAND_CANNON_FULL_RANGE = 15,
+		HAND_CANNON_MIN_RANGE = 45,
+		LMG_STEPS = {
+			{ 0, 41.2 },
+			{ 21.5, 34.3 },
+			{ 75, 29.4 }
+		},
+		SMG_STEPS = {
+			{ 0, 41.2 },
+			{ 9.5, 34.3 },
+			{ 21.5, 25.8 },
+			{ 37, 22.9 },
+			{ 75, 17.2 }
+		},
+		DMR = 75,
+		DMR_MIN = 60,
+		DMR_HEAD = 110,
+		DMR_HEAD_MIN = 100,
+		DMR_FULL_RANGE = 35,
+		DMR_MIN_RANGE = 80,
+		SHOTGUN = 28,
+		SHOTGUN_MIN = 9,
+		SHOTGUN_FULL_RANGE = 13,
+		SHOTGUN_MIN_RANGE = 42,
+		SNIPER = 160,
+		SNIPER_HEAD = 100000,
+		HEAD = 1.4,
+		LIMB = 0.84
+	},
+	REDEPLOY_TIME = 7,
+	LOBBY_RESPAWN_TIME = 2,
+	MOBILE_VS_PC_DAMAGE = 1.15,
+	SPAWN_PROTECTION = 5,
+	SPAWN_PROTECTION_GRACE = 1.5,
+	SUPPORT_WINDOW = 10,
+	REVIVE = {
+		WINDOW = 7,
+		HOLD = 3,
+		REACH = 10,
+		REACH_SLACK = 4,
+		CALL_RANGE = 112,
+		HEALTH = 0.5,
+		PROTECTION = 1.5,
+		ASK_EVERY = 4,
+		REQUEST_RATE = 0.2,
+		REPING_EVERY = 8,
+		PAID_HEALTH = 1,
+		PAID_PROTECTION = 2,
+		PAY_HOLD = 20,
+		DRAG_LEASH = 4,
+		DRAG_SPEED = 12,
+		DRAG_CLIMB = 2.6,
+		DRAG_WALK = 0.55
+	},
+	ROLL_AT = 3,
+	CREW_AT = 5,
+	CREW_EVERY = 5,
+	SHUTDOWN_MIN = 3,
+	SPAWN_SAFE_RADIUS = 40,
+	TEAM_MAX_GAP = 2,
+	BIG_SERVER = 30,
+	SCORE = {
+		TAKEDOWN = 100,
+		SUPPORT = 50,
+		REVIVE = 75,
+		BREACH = 15,
+		DEMOLITION = 10,
+		BEACON = 250,
+		WIN = 500,
+		ROUND = 200,
+		CAPTURE_TICK = 10,
+		NEUTRALIZED = 100,
+		CAPTURED = 200,
+		DEFEND_TICK = 10,
+		VEHICLE_DAMAGE = 200,
+		VEHICLE_DOWN = 300,
+		VEHICLE_DOWN_BY = { Humvee = 300, Bradley = 400, Tank = 500, Heli = 500 },
+		VEHICLE_ASSIST = 100,
+		TURRET_DAMAGE = 100,
+		TURRET_DOWN = 150,
+		TURRET_DOWN_BASE = 200
+	},
+	BREACH_PART_CELLS = 96,
+	DEMOLITION_PART_CELLS = 160,
+	WRECK_ROUND_CAP = 1000,
+	SCRAP_PER_SCORE = 10,
+	SCRAP_WIN_BONUS = 50,
+	SCORE_MERGE_WINDOW = 0.25,
+	SUPPLY_MAX = 250,
+	SUPPLY_START = 60,
+	SUPPLY_REGEN = 0.5,
+	SUPPLY_PER_PART = 1
+}
+
+GameConfig.MATERIALS_MAX = GameConfig.SUPPLY_MAX
+GameConfig.MATERIALS_START = GameConfig.SUPPLY_START
+
+GameConfig.LEVEL_XP_BASE = 1000
+GameConfig.LEVEL_XP_STEP = 500
+GameConfig.LEVEL_EASE_UNTIL = 11
+GameConfig.LEVEL_EASE_FROM = 0.4
+GameConfig.LEVEL_EASE_STEP = 0.06
+GameConfig.LEVEL_MAX = 100
+
+GameConfig.LEVEL_SLOW_FROM = 6
+GameConfig.LEVEL_SLOW_STEP = 0.25
+GameConfig.LEVEL_LATE_FROM = 16
+GameConfig.LEVEL_LATE_STEP = 0.06
+GameConfig.LEVEL_SLOW_MIN = 0.1
+
+GameConfig.DATASTORE_NAME = "TwinKeepsProfiles_v1"
+GameConfig.AUTOSAVE_INTERVAL = 120
+
+return GameConfig
